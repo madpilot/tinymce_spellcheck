@@ -9,8 +9,8 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Myles Eftos"]
-  s.date = "2012-06-04"
-  s.description = "TODO: longer description of your gem"
+  s.date = "2012-06-05"
+  s.description = "Interface between raspell and TinyMCE"
   s.email = "myles@madpilot.com.au"
   s.extra_rdoc_files = [
     "LICENSE.txt",
@@ -19,13 +19,17 @@ Gem::Specification.new do |s|
   s.files = [
     ".document",
     "Gemfile",
+    "Gemfile.lock",
     "LICENSE.txt",
     "README.rdoc",
     "Rakefile",
     "VERSION",
     "lib/tinymce_spellcheck.rb",
+    "lib/tinymce_spellcheck/engines/raspell.rb",
+    "lib/tinymce_spellcheck/tinymce_spellcheck.rb",
     "test/helper.rb",
-    "test/test_tinymce_spellcheck.rb"
+    "test/test_tinymce_spellcheck.rb",
+    "tinymce_spellcheck.gemspec"
   ]
   s.homepage = "http://github.com/madpilot/tinymce_spellcheck"
   s.licenses = ["MIT"]

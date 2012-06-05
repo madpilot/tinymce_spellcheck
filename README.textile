@@ -1,0 +1,24 @@
+h1. TinymceSpellcheck
+
+Acts as an interface to the TinyMCE spell checker plugin. At the moment, it only supports ASpell (via the "raspell gem":http://github.com/fauna/raspell) but it has the ability to abstract engines away, so it can be extended in the future.
+
+h2. Install
+
+bc. % gem install tinymce_spellcheck
+
+.h3 Via Bundler
+
+gem 'tinymce_spellcheck'
+
+h2. Example
+
+bc. def spellcheck
+  data = ActiveSupport::JSON.decode(request.raw_post)
+  args = data['params'].to_a.first
+  spellcheck = TinymceSpellcheck::TinymceSpellcheck.new({}, :raspell)
+  result = spellcheck.send(data['method'].underscore, *args)
+  render :json => { :id => data['id'], :result => result, :error => nil }.to_json
+end
+
+
+Copyright (c) 2009-2012 "MadPilot Productions":http://www.madpilot.com.au, released under the MIT license
