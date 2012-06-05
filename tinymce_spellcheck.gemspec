@@ -5,23 +5,23 @@
 
 Gem::Specification.new do |s|
   s.name = "tinymce_spellcheck"
-  s.version = "0.0.0"
+  s.version = "0.1.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Myles Eftos"]
   s.date = "2012-06-05"
-  s.description = "Interface between raspell and TinyMCE"
+  s.description = "TODO: longer description of your gem"
   s.email = "myles@madpilot.com.au"
   s.extra_rdoc_files = [
     "LICENSE.txt",
-    "README.rdoc"
+    "README.textile"
   ]
   s.files = [
     ".document",
     "Gemfile",
     "Gemfile.lock",
     "LICENSE.txt",
-    "README.rdoc",
+    "README.textile",
     "Rakefile",
     "VERSION",
     "lib/tinymce_spellcheck.rb",
