@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "tinymce_spellcheck"
   gem.homepage = "http://github.com/madpilot/tinymce_spellcheck"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Interface between raspell and TinyMCE}
+  gem.description = %Q{Interface between raspell and TinyMCE}
   gem.email = "myles@madpilot.com.au"
   gem.authors = ["Myles Eftos"]
   # dependencies defined in Gemfile
